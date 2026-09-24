@@ -31,6 +31,16 @@ Docker'а на ноутбуке нет? Тогда локально работа
 | `make seed` | перезалить учебные данные |
 | `make help` | список всех команд |
 
+## Как проверить, что сервис жив
+
+1. Поднимите контейнеры: `make up`.
+2. Проверьте их состояние: `make ps`. Для MySQL в `docker-compose.yml`
+   настроен healthcheck через `mysqladmin ping`.
+3. Запросите HTTP health endpoint: `curl http://localhost:8080/health`.
+4. Если endpoint не отвечает, посмотрите логи backend: `make logs`.
+
+Отдельно корректность кода проверяют `make test` и `make lint`.
+
 ## API
 
 | Метод | Путь | Зачем |
