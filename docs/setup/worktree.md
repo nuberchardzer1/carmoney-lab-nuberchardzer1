@@ -7,7 +7,7 @@ C:/Users/Simon/carmoney-lab                             70f81a7 [d1/1.2.1-1.2.3-
 C:/Users/Simon/carmoney-lab/.kilo/worktrees/unit-tests  70f81a7 [d1/1.2.3-agent-nuberchardzer1]
 ```
 
-## Ответ агента из второй сесии
+## Ответ агента из второй сессии
 
 - `ApplicationValidatorTest.php` — проверяет приём корректной заявки, нормализацию VIN и ошибки года, суммы и нескольких полей.
 - `AssessmentServiceTest.php` — проверяет LTV, `approve` / `review` / `reject`, лимит и возраст авто на уровне всей оценки.
