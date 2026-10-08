@@ -24,5 +24,12 @@
       "rm -rf*": "deny",
       "git push --force*": "deny"
     }
+  },
+  "mcp": {
+    "claude-in-mobile": {
+      "type": "local",
+      "command": ["npx", "-y", "claude-in-mobile"],
+      "enabled": true
+    }
   }
 }
